@@ -4462,6 +4462,11 @@ footer .foot2 .link a + a {
     padding: 0;
   }
 }
+.pager ul li.active a {
+  background: linear-gradient(0deg, #0080CC, #00AFFF);
+  box-shadow: 0px 10px 30px 0px rgba(0, 128, 203, 0.2);
+  color: #fff;
+}
 .pager ul li a {
   display: block;
   min-width: 0.54rem;
@@ -5318,6 +5323,7 @@ footer .foot2 .link a + a {
   border-radius: 0.2rem !important;
   max-width: 12rem;
   min-width: 8rem;
+  width: 8rem;
 }
 @media (max-width: 768px) {
   .demo-class {
@@ -5441,6 +5447,7 @@ footer .foot2 .link a + a {
   border-radius: 0.2rem !important;
   max-width: 12rem;
   min-width: 8rem;
+  width: 8rem;
 }
 @media (max-width: 768px) {
   .demo-class2 {
@@ -6580,6 +6587,7 @@ footer .foot2 .link a + a {
   border-radius: 0.2rem !important;
   max-width: 12rem;
   min-width: 8rem;
+  width: 8rem;
 }
 @media (max-width: 768px) {
   .demo-class3 {
@@ -7011,7 +7019,6 @@ footer .foot2 .link a + a {
   height: 3.13rem;
   text-align: center;
   padding-top: 0.4rem;
-  cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
 @media (max-width: 768px) {
@@ -7021,7 +7028,6 @@ footer .foot2 .link a + a {
   }
 }
 .join-box1 .list .item:hover {
-  transform: translateY(-0.3rem);
   background: linear-gradient(-55deg, #037DC5, #03993C);
   box-shadow: 0px 18px 29px 2px rgba(3, 125, 197, 0.13);
 }
@@ -7439,7 +7445,6 @@ footer .foot2 .link a + a {
 .about-box1 .container .number-ul li .t2 {
   font-weight: 400;
   color: #3D3939;
-  text-align: center;
 }
 .about-box1-2 {
   background: url(../images/about/bg2.png) no-repeat top center;
@@ -7670,6 +7675,9 @@ footer .foot2 .link a + a {
   font-size: 0.2rem;
   flex: 0 0 auto;
   padding-right: 0.15rem;
+}
+.about-box1-2 .swiper1 .swiper1-item ul li a {
+  cursor: default;
 }
 .about-box1-2 .swiper1 .swiper1-item ul li p {
   flex: 1 1 auto;
