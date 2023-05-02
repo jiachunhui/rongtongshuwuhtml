@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"
+    />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fer/lib/pace/pace-theme-flash.css"
+    />
+    <script type="text/javascript" src="../fer/lib/pace/pace.min.js"></script>
+    <script type="text/javascript" src="../fer/fan/rem.js"></script>
+    <link rel="stylesheet" type="text/css" href="../fer/css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fer/lib/layui/css/layui.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../fer/css/comm.css?adf" />
+    <link rel="stylesheet" type="text/css" href="../fer/css/stylejia.css?adf" />
+    <script
+      type="text/javascript"
+      src="../fer/lib/jquery-1.10.2.js?asdf"
+    ></script>
+    <script type="text/javascript" src="../fer/lib/layui/layui.js"></script>
+  </head>
+  <body class="in_body">
+    <div id="top">实际中，直接复制Inc/header.html，这个div删除</div>
+
+    <!--page start-->
+
+    <div class="page-banner">
+      <div class="bg-img">
+        <img src="../fer/images/serve/banner.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="txt wow fadeInUp">
+          <div class="en"><span>serve</span></div>
+          <div class="t1">综合服务</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <div class="containers">
+        <div class="container">
+          <div class="navs">
+            <ul>
+              <li><a href="客服中心.html">客服中心</a></li>
+              <li><a href="政策法规.html">政策法规</a></li>
+              <li><a href="办事指南.html">办事指南</a></li>
+              <li><a href="用水常识.html">用水常识</a></li>
+              <li class=""><a href="常见问题.html">常见问题</a></li>
+              <li class="active"><a href="咨询投诉.html">咨询投诉</a></li>
+            </ul>
+          </div>
+          <div class="paths">
+            <ul>
+              <li><a href="#">首页</a></li>
+              <li><a href="#">关于融通</a></li>
+              <li><a href="#">荣誉资质</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="serve-box6 page-box-first">
+      <div class="container">
+        <div class="page-tit">
+          <div class="en"><span>consult</span></div>
+          <div class="t1"><span>咨询投诉</span></div>
+        </div>
+
+        <div class="tips">
+          <p>
+            感谢您对融通水务的关注，您可以填写下表反馈问题或建议，我们在收到您的留言后，会第一时间和您联系。
+          </p>
+        </div>
+
+        <div class="layui-form">
+          <div class="left">
+            <div class="item-input required">
+              <select name="city" lay-verify="required" lay-verType="tips">
+                <option value="">请选择留言类型</option>
+                <option value="0">北京</option>
+                <option value="1">上海</option>
+                <option value="2">广州</option>
+                <option value="3">深圳</option>
+                <option value="4">杭州</option>
+              </select>
+            </div>
+            <div class="item-input required">
+              <input
+                type="text"
+                name="title"
+                required
+                lay-verify="required"
+                lay-verType="tips"
+                placeholder="请输入标题"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="item-input required">
+              <input
+                type="text"
+                name="phone"
+                required
+                lay-verify="required|phone"
+                lay-verType="tips"
+                placeholder="请输入您的电话"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="item-input">
+              <input
+                type="text"
+                name="email"
+                placeholder="请输入邮箱"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="right">
+            <div class="item-input item-input-picker">
+              <div id="area-picker">
+                <div class="province">
+                  <select
+                    name="province"
+                    class="province-selector"
+                    lay-filter="province-1"
+                  >
+                    <option value="">请选择省</option>
+                  </select>
+                </div>
+                <div class="city">
+                  <select name="city" class="city-selector" lay-filter="city-1">
+                    <option value="">请选择市</option>
+                  </select>
+                </div>
+                <div class="county">
+                  <select
+                    name="county"
+                    class="county-selector"
+                    lay-filter="county-1"
+                  >
+                    <option value="">请选择区</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="item-input">
+              <input
+                type="text"
+                name="address"
+                placeholder="请输入详细地址"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+            <div class="item-input item-input-txt required">
+              <textarea
+                name="desc"
+                required
+                lay-verify="required"
+                lay-verType="tips"
+                placeholder="请输入留言内容..."
+                class="layui-textarea"
+              ></textarea>
+            </div>
+          </div>
+          <div class="item-tips">注：<span>*</span>为必填项目</div>
+          <div class="item-btns">
+            <button class="layui-btn" lay-submit lay-filter="formDemozixun">
+              确认提交
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--page end-->
+
+    <div id="foot">实际中，直接复制Inc/footer.html，这个div删除</div>
+
+    <script type="text/javascript" src="../fer/fan/inpage.js"></script>
+
+    <script type="text/javascript" src="../fer/lib/wow.min.js"></script>
+    <script type="text/javascript">
+      var _page = '';
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true,
+        callback: function (box) {
+          if ($(box).hasClass('index-box4-swiper')) {
+            console.log(box);
+            if ($(box).attr('data-m') != '') {
+              $(box)
+                .find('.num')
+                .each(function () {
+                  var _thas = $(this);
+                  setTimeout(function () {
+                    countup2(_thas.find('.no'));
+                  }, $(box).attr('data-m'));
+                });
+            }
+          }
+        },
+        scrollContainer: null,
+      });
+      wow.init();
+    </script>
+    <script
+      type="text/javascript"
+      data-main="../fer/main"
+      src="../fer/require.js"
+      defer
+      async="true"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no,viewport-fit=cover"
+    />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fer/lib/pace/pace-theme-flash.css"
+    />
+    <script type="text/javascript" src="fer/lib/pace/pace.min.js"></script>
+    <script type="text/javascript" src="fer/fan/rem.js"></script>
+    <link rel="stylesheet" type="text/css" href="fer/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="fer/css/comm.css?adf" />
+    <link rel="stylesheet" type="text/css" href="fer/lib/layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="fer/css/stylejia.css?adf" />
+    <script type="text/javascript" src="fer/lib/jquery-1.10.2.js?asdf"></script>
+    <script type="text/javascript" src="fer/lib/layui/layui.js"></script>
+  </head>
+  <body class="in_body">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#" class="logo-a">
+            <img src="../fer/images/logo.png" alt="" />
+          </a>
+          <div class="dingwei" id="dingwei">
+            <div class="city-div">
+              <div class="city-box">
+                <div class="city" id="city-btn">
+                  <i class="icons-dingwei"></i>
+                  <span id="city-value">北京</span>
+                  <i class="icons-down"></i>
+                </div>
+
+                <div class="list" id="city-list">
+                  <ul>
+                    <li
+                      class="active"
+                      data-province="北京市"
+                      data-city="北京市"
+                      data-county=""
+                    >
+                      <span>北京</span>
+                    </li>
+                    <li
+                      data-province="天津市"
+                      data-city="天津市"
+                      data-county=""
+                    >
+                      <span>天津</span>
+                    </li>
+                    <li
+                      data-province="重庆市"
+                      data-city="重庆市"
+                      data-county=""
+                    >
+                      <span>重庆</span>
+                    </li>
+                    <li
+                      data-province="上海市"
+                      data-city="上海市"
+                      data-county=""
+                    >
+                      <span>上海</span>
+                    </li>
+                    <li
+                      data-province="福建省"
+                      data-city="厦门市"
+                      data-county=""
+                    >
+                      <span>厦门</span>
+                    </li>
+                    <li data-province="山西省" data-city="" data-county="">
+                      <span>山西省</span>
+                    </li>
+                    <li
+                      data-province="山西省"
+                      data-city="晋中市"
+                      data-county="左权县"
+                    >
+                      <span>左权县</span>
+                    </li>
+                    <li
+                      data-province="河北省"
+                      data-city="石家庄市"
+                      data-county=""
+                    >
+                      <span>石家庄</span>
+                    </li>
+                    <li
+                      data-province="内蒙古自治区"
+                      data-city="呼和浩特市"
+                      data-county=""
+                    >
+                      <span>呼和浩特</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="navs" id="navs">
+            <div class="layui-form">
+              <input type="text" placeholder="输入内容" name="key" />
+              <button
+                type="submit"
+                class="layui-btn"
+                lay-submit
+                lay-filter="search"
+              >
+                搜索
+              </button>
+            </div>
+
+            <ul>
+              <li class="active">
+                <a href="#">关于融通</a>
+                <ul>
+                  <li><a href="企业简介.html">企业简介</a></li>
+                  <li><a href="#">发展历程</a></li>
+                  <li><a href="#">企业文化</a></li>
+                  <li><a href="荣誉资质.html">荣誉资质</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="#">业务领域</a>
+                <ul>
+                  <li><a href="#">直饮水解决方案</a></li>
+                  <li><a href="#">施工改造</a></li>
+                  <li><a href="#">技术提供</a></li>
+                  <li><a href="#">售水设备</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="#">新闻公告</a>
+                <ul>
+                  <li><a href="公司动态.html">公司动态</a></li>
+                  <li><a href="通知公告.html">通知公告</a></li>
+                  <li><a href="停水公告.html">停水公告</a></li>
+                  <li><a href="水质报告.html">水质报告</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="#">综合服务</a>
+                <ul>
+                  <li><a href="客服中心.html">客服中心</a></li>
+                  <li><a href="政策法规.html">政策法规</a></li>
+                  <li class=""><a href="办事指南.html">办事指南</a></li>
+                  <li><a href="用水常识.html">用水常识</a></li>
+                  <li class=""><a href="常见问题.html">常见问题</a></li>
+                  <li class=""><a href="咨询投诉.html">咨询投诉</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="#">加入融通</a>
+                <ul>
+                  <li class=""><a href="#">社会招聘</a></li>
+                  <li><a href="#">校园招聘</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tels" id="tel1">
+            <a href="#"><span>400-005-4000</span></a>
+          </div>
+          <div class="search" id="search-div">
+            <button id="search-btn">搜索</button>
+            <div class="layui-form">
+              <input type="text" placeholder="输入内容" name="key" />
+              <button
+                type="submit"
+                class="layui-btn"
+                lay-submit
+                lay-filter="search"
+              >
+                搜索
+              </button>
+            </div>
+          </div>
+          <div class="menu-btn">
+            <button class="" id="menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="fullpage">
+      <div class="section fp-table" id="section-1">
+        <div class="index-box1">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="bg-img">
+                    <img
+                      src="fer/images/index/banner1.png"
+                      class="img1"
+                      alt=""
+                    />
+                    <img
+                      src="fer/images/index/banner1.png"
+                      class="img2"
+                      alt=""
+                    />
+                  </div>
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                  <div class="k"></div>
+                  <div class="txt">
+                    <div class="t1"><span>rongtong water</span></div>
+                    <div class="t2">
+                      品质生活
+                      <i><img src="fer/images/icon/shuidi2.png" alt="" /></i>
+                      从水开始
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="bg-img">
+                    <img src="fer/images/index/bg4.png" alt="" />
+                  </div>
+                  <div class="k"></div>
+                  <div class="txt">
+                    <div class="t1"><span>rongtong water</span></div>
+                    <div class="t2">
+                      品质生活2
+                      <i><img src="fer/images/icon/shuidi2.png" alt="" /></i>
+                      从水开始
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="section fp-table" id="section-2">
+        <div class="index-box2">
+          <div class="bg-img wow fadeInUp">
+            <img src="fer/images/index/bg1.png" alt="" />
+          </div>
+          <div class="img1 wow fadeInUp"></div>
+
+          <div class="container">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="k"></div>
+            <div class="img2"></div>
+            <div class="tit wow fadeInUp">
+              <span>News<br />Bulletin</span>
+            </div>
+            <div class="btns">
+              <ul id="index-box2-btns">
+                <li class="wow fadeInUp">
+                  <a href="javascript:;">
+                    <i class="icons-i1"></i>
+                    <span>在线缴费</span>
+                  </a>
+                </li>
+                <li class="active wow fadeInUp">
+                  <a href="javascript:;">
+                    <i class="icons-i2"></i>
+                    <span>便民信息</span>
+                  </a>
+                </li>
+                <li class="wow fadeInUp">
+                  <a href="javascript:;">
+                    <i class="icons-i3"></i>
+                    <span>公司动态 </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="right" id="index-box2-right">
+              <div class="right-item">
+                <div class="index-box2-right1 wow fadeInUp">
+                  <img src="fer/images/index/10.png" alt="" />
+                </div>
+              </div>
+              <div class="right-item active">
+                <div class="index-box2-right2">
+                  <div class="index-box2-right2-tab">
+                    <ul id="index-box2-tab">
+                      <li class="active wow fadeInUp"><span>停水公告</span></li>
+                      <li class="wow fadeInUp"><span>水质报告</span></li>
+                      <li class="wow fadeInUp"><span>通知公告</span></li>
+                    </ul>
+                  </div>
+                  <div
+                    class="index-box2-right2-tabcontent"
+                    id="index-box2-content"
+                  >
+                    <div
+                      class="index-box2-right2-tabcontent-item active wow fadeInUp"
+                    >
+                      <div class="item">
+                        <div class="img wow fadeInUp">
+                          <img src="fer/images/index/9.png" alt="" />
+                        </div>
+                        <div class="list">
+                          <ul>
+                            <li class="wow fadeInUp">
+                              <label for="" class="hot">突发</label>
+                              <a href="#" class="js-open-show-news-box3">
+                                <div class="t1">
+                                  内蒙古赤峰市停水通知 （ 3 月 23 日 10 ： 00 ）
+                                </div>
+                                <div class="t2">
+                                  停水时间 ： 2023 年 3 月 23 日一 28 日停水区域
+                                  ： 全市
+                                </div>
+                                <div class="desc">
+                                  <hr />
+                                  <div class="desc-box">
+                                    <ul>
+                                      <li>
+                                        <b>停水区域：</b>
+                                        <p>燕赵锦河湾</p>
+                                      </li>
+                                      <li>
+                                        <b>停水时间：</b>
+                                        <p>3月15日09:00-18:00</p>
+                                      </li>
+                                      <li>
+                                        <b>停水原因：</b>
+                                        <p>智慧水务升级改造</p>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="wow fadeInUp">
+                              <label for="" class="">计划</label>
+                              <a href="#">
+                                <div class="t1">
+                                  内蒙古赤峰市停水通知 （ 3 月 23 日 10 ： 00 ）
+                                </div>
+                                <div class="t2">
+                                  停水时间 ： 2023 年 3 月 23 日一 28 日停水区域
+                                  ： 全市
+                                </div>
+                              </a>
+                            </li>
+                            <li class="wow fadeInUp">
+                              <label for="" class="">计划</label>
+                              <a href="#">
+                                <div class="t1">
+                                  内蒙古赤峰市停水通知 （ 3 月 23 日 10 ： 00 ）
+                                </div>
+                                <div class="t2">
+                                  停水时间 ： 2023 年 3 月 23 日一 28 日停水区域
+                                  ： 全市
+                                </div>
+                              </a>
+                            </li>
+                            <li class="wow fadeInUp">
+                              <label for="" class="">计划</label>
+                              <a href="#">
+                                <div class="t1">
+                                  内蒙古赤峰市停水通知 （ 3 月 23 日 10 ： 00 ）
+                                </div>
+                                <div class="t2">
+                                  停水时间 ： 2023 年 3 月 23 日一 28 日停水区域
+                                  ： 全市
+                                </div>
+                              </a>
+                            </li>
+                            <li class="wow fadeInUp">
+                              <label for="" class="">计划</label>
+                              <a href="#">
+                                <div class="t1">
+                                  内蒙古赤峰市停水通知 （ 3 月 23 日 10 ： 00
+                                  ）内蒙古赤峰市停水通知 （ 3 月 23 日 10 ： 00
+                                  ）
+                                </div>
+                                <div class="t2">
+                                  停水时间 ： 2023 年 3 月 23 日一 28 日停水区域
+                                  ： 全市停水时间 ： 2023 年 3 月 23 日一 28
+                                  日停水区域 ： 全市
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="more wow fadeInUp">
+                        <a href="#">查看更多 +</a>
+                      </div>
+                    </div>
+                    <div class="index-box2-right2-tabcontent-item">
+                      <div class="item">
+                        <div class="img wow fadeInUp">
+                          <img src="fer/images/index/8.png" alt="" />
+                        </div>
+                        <div class="list2">
+                          <ul>
+                            <li class="wow fadeInUp">
+                              <a href="#"
+                                ><span>2023-03-05 </span>
+                                <p>
+                                  运动比赛 《 用水报告 》 出台规定事项通知
+                                </p></a
+                              >
+                            </li>
+                            <li class="wow fadeInUp">
+                              <a href="#"
+                                ><span>2023-03-05 </span>
+                                <p>
+                                  内蒙古城乡居民用水 （ 第五版 ） 报告修订
+                                  意见征集
+                                </p></a
+                              >
+                            </li>
+                            <li class="wow fadeInUp">
+                              <a href="#"
+                                ><span>2023-03-05 </span>
+                                <p>城市用水一可持续标准水质报名说明文件</p></a
+                              >
+                            </li>
+                            <li class="wow fadeInUp">
+                              <a href="#"
+                                ><span>2023-03-05 </span>
+                                <p>
+                                  国家水务局出台关于家庭水质健康标准出
+                                  台意味着什么 ？
+                                </p></a
+                              >
+                            </li>
+                            <li class="wow fadeInUp">
+                              <a href="#"
+                                ><span>2023-03-05 </span>
+                                <p>
+                                  农村农田灌溉用水的标准进一步提升说明农村农田灌溉用水的标准进一步提升说明农村农田灌溉用水的标准进一步提升说明农村农田灌溉用水的标准进一步提升说明
+                                </p></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="more wow fadeInUp">
+                        <a href="#">查看更多 +</a>
+                      </div>
+                    </div>
+                    <div class="index-box2-right2-tabcontent-item">
+                      <div class="item">
+                        <div class="img wow fadeInUp">
+                          <img src="fer/images/index/8.png" alt="" />
+                        </div>
+                        <div class="list2">
+                          <ul>
+                            <li class="wow fadeInUp">
+                              <a href="#"
+                                ><span>2023-03-05 </span>
+                                <p>
+                                  运动比赛 《 用水报告 》 出台规定事项通知
+                                </p></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="more wow fadeInUp">
+                        <a href="#">查看更多 +</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-item">
+                <div class="more wow fadeInUp">
+                  <a href="#">查看更多 +</a>
+                </div>
+                <div class="index-box2-swiper wow fadeInUp">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper-item">
+                          <div class="img">
+                            <a href="#">
+                              <img src="fer/images/index/2.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="txt">
+                            <div class="t1">
+                              <div class="tt">
+                                <a href="#">融通水务公司开展家庭用水宣传活动</a>
+                              </div>
+                              <div class="dd"><span>2023-11-12</span></div>
+                            </div>
+                            <div class="desc">
+                              <p>
+                                冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各p>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-item">
+                          <div class="img">
+                            <a href="#">
+                              <img src="fer/images/index/3.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="txt">
+                            <div class="t1">
+                              <div class="tt">
+                                <a href="#"
+                                  >内蒙古政府发布关于城市水源健康排行榜
+                                </a>
+                              </div>
+                              <div class="dd"><span>2023-11-12</span></div>
+                            </div>
+                            <div class="desc">
+                              <p>
+                                冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各p>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-item">
+                          <div class="img">
+                            <a href="#">
+                              <img src="fer/images/index/4.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="txt">
+                            <div class="t1">
+                              <div class="tt">
+                                <a href="#">融通包头市水质达到体育局监测标准</a>
+                              </div>
+                              <div class="dd"><span>2023-11-12</span></div>
+                            </div>
+                            <div class="desc">
+                              <p>
+                                冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各p>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-item">
+                          <div class="img">
+                            <a href="#">
+                              <img src="fer/images/index/5.png" alt="" />
+                            </a>
+                          </div>
+                          <div class="txt">
+                            <div class="t1">
+                              <div class="tt">
+                                <a href="#"
+                                  >融通水务公司开展家庭用水宣传活动融通水务公司开展家庭用水宣传活动融通水务公司开展家庭用水宣传活动</a
+                                >
+                              </div>
+                              <div class="dd"><span>2023-11-12</span></div>
+                            </div>
+                            <div class="desc">
+                              <p>
+                                冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各冬去春来，公司开展一年一度的家庭用水宣传活动将于本月中旬开始届时将在城区各p>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fp-table" id="section-3">
+        <div class="index-box3">
+          <div class="img1 wow fadeInUp">
+            <img src="fer/images/index/4.png" alt="" />
+          </div>
+          <div class="container">
+            <div class="img2"></div>
+            <div class="k"></div>
+            <div class="tit">
+              <div class="t1 wow fadeInUp">公司介绍</div>
+              <div class="t2 wow fadeInUp">
+                <span>Company<br />Profile</span>
+              </div>
+            </div>
+
+            <div class="more wow fadeInUp">
+              <a href="#">点击查看更多</a>
+            </div>
+
+            <div class="list">
+              <div class="item first wow fadeInUp" data-wow-delay=".1s">
+                <a href="#">
+                  <img src="fer/images/index/5.png" alt="" />
+                  <div class="t1">
+                    <h2>企业愿景</h2>
+                    <p>让每人饮用融通的直饮水</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item wow fadeInUp" data-wow-delay=".14s">
+                <a href="#">
+                  <img src="fer/images/index/6.png" alt="" />
+                  <div class="t1">
+                    <h2>企业使命</h2>
+                    <p>让每人饮用融通的直饮水</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item wow fadeInUp" data-wow-delay=".2s">
+                <a href="#">
+                  <img src="fer/images/index/7.png" alt="" />
+                  <div class="t1">
+                    <h2>核心价值</h2>
+                    <p>让每人饮用融通的直饮水</p>
+                  </div>
+                </a>
+              </div>
+              <div class="item wow fadeInUp" data-wow-delay=".25s">
+                <div class="desc">
+                  <p>
+                    融通水务是一家集投资、设计、施工、运营、维护于一体的管道直饮水综合服务商，深耕直饮水行业18年，已成为政府、地产、社区信赖的合作伙伴，通过直饮水整体解决方案为客户提供一站式服务，范围涵盖新旧住宅、商业楼宇、学校医院等。<br />
+                    多年来，我们始终坚持“诚信、正直、尊重、沟通、客户至上”的核心价值，致力于让更多人享受健康饮水带来的品质生活，为建设安全、健康、可持续的直饮水模式和生活服务新生态做出贡献。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fp-table" id="section-4">
+        <div class="index-box4">
+          <div class="container">
+            <div class="tit wow fadeInUp">
+              <div class="en"><span>achievement</span></div>
+              <div class="t1">企业成就</div>
+            </div>
+
+            <div class="list">
+              <div class="index-box4-swiper wow fadeInUp" data-m="300">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="item wow fadeInUp">
+                        <div class="t1">供水经验</div>
+                        <div class="t2">
+                          <div class="num" data-m="300">
+                            <span data-num="18" class="no">18</span
+                            ><span>+</span><span>年</span>
+                          </div>
+                        </div>
+                        <div class="t3">Water supply <br />experience</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item wow fadeInUp">
+                        <div class="t1">合作伙伴</div>
+                        <div class="t2">
+                          <div class="num" data-m="300">
+                            <span data-num="30" class="no">30</span
+                            ><span>+</span><span>家</span>
+                          </div>
+                        </div>
+                        <div class="t3">cooperative <br />partner</div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item wow fadeInUp">
+                        <div class="t1">覆盖用水人数</div>
+                        <div class="t2">
+                          <div class="num" data-m="300">
+                            <span data-num="100" class="no">100</span
+                            ><span>+</span><span>万人</span>
+                          </div>
+                        </div>
+                        <div class="t3">
+                          Number of water users <br />covered
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="item wow fadeInUp">
+                        <div class="t1">日制水能力</div>
+                        <div class="t2">
+                          <div class="num" data-m="300">
+                            <span data-num="300" class="no">300</span
+                            ><span>+</span><span>万升</span>
+                          </div>
+                        </div>
+                        <div class="t3">
+                          Daily water production <br />capacity
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fp-table" id="section-5">
+        <div class="index-box5">
+          <div class="swiper-bg">
+            <div class="swiper swiper-no-swiping">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide"
+                  style="
+                    background: url(fer/images/index/bg4.png) no-repeat center
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="
+                    background: url(fer/images/index/bg2.png) no-repeat center
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="
+                    background: url(fer/images/index/bg1.png) no-repeat center
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
+                <div
+                  class="swiper-slide"
+                  style="
+                    background: url(fer/images/index/bg5.png) no-repeat center
+                      center;
+                    background-size: cover;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="tit wow fadeInUp">
+              <div class="en">
+                <span>Business <br />area</span>
+              </div>
+              <div class="t1">业务领域</div>
+            </div>
+
+            <div class="swiper1 wow fadeInUp">
+              <div class="swiper swiper-no-swiping">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="t1">直饮水解决方案</div>
+                      <div class="desc">
+                        <p>
+                          融通水务在管道直饮水领域拥有多年丰富的运维服务经验，始终致力于提供安全、健康、方便的优质直饮水，实现用户打开水龙头即可享用的便捷，提升广大用户的获得感和幸福感。我们针对不同生活场景制定不同的解决方案，在新旧住宅小区、学校医院、商业楼宇、新农村四大模块有成熟的应用。
+                        </p>
+                      </div>
+                      <div class="more">
+                        <a href="#">
+                          <span>点击查看更多</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="t1">施工改造</div>
+                      <div class="desc">
+                        <p>
+                          融通水务在管道直饮水领域拥有多年丰富的运维服务经验，始终致力于提供安全、健康、方便的优质直饮水，实现用户打开水龙头即可享用的便捷，提升广大用户的获得感和幸福感。我们针对不同生活场景制定不同的解决方案，在新旧住宅小区、学校医院、商业楼宇、新农村四大模块有成熟的应用。
+                        </p>
+                      </div>
+                      <div class="more">
+                        <a href="#">
+                          <span>点击查看更多</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="t1">技术提供</div>
+                      <div class="desc">
+                        <p>
+                          融通水务在管道直饮水领域拥有多年丰富的运维服务经验，始终致力于提供安全、健康、方便的优质直饮水，实现用户打开水龙头即可享用的便捷，提升广大用户的获得感和幸福感。我们针对不同生活场景制定不同的解决方案，在新旧住宅小区、学校医院、商业楼宇、新农村四大模块有成熟的应用。
+                        </p>
+                      </div>
+                      <div class="more">
+                        <a href="#">
+                          <span>点击查看更多</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="t1">售水设备直</div>
+                      <div class="desc">
+                        <p>
+                          融通水务在管道直饮水领域拥有多年丰富的运维服务经验，始终致力于提供安全、健康、方便的优质直饮水，实现用户打开水龙头即可享用的便捷，提升广大用户的获得感和幸福感。我们针对不同生活场景制定不同的解决方案，在新旧住宅小区、学校医院、商业楼宇、新农村四大模块有成熟的应用。
+                        </p>
+                      </div>
+                      <div class="more">
+                        <a href="#">
+                          <span>点击查看更多</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="list wow fadeInUp" id="index-box5-list">
+              <div class="item active">
+                <div class="dian"><span></span></div>
+                <div class="txt">直饮水解决方案</div>
+              </div>
+              <div class="item">
+                <div class="dian"><span></span></div>
+                <div class="txt">施工改造</div>
+              </div>
+              <div class="item">
+                <div class="dian"><span></span></div>
+                <div class="txt">技术提供</div>
+              </div>
+              <div class="item">
+                <div class="dian"><span></span></div>
+                <div class="txt">售水设备</div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper2 wow fadeInUp">
+              <div class="swiper">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" data-id="0">
+                    <div class="item">
+                      <div class="dian"><span></span></div>
+                      <div class="txt">直饮水解决方案</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-id="1">
+                    <div class="item">
+                      <div class="dian"><span></span></div>
+                      <div class="txt">施工改造</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-id="2">
+                    <div class="item">
+                      <div class="dian"><span></span></div>
+                      <div class="txt">技术提供</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide" data-id="3">
+                    <div class="item">
+                      <div class="dian"><span></span></div>
+                      <div class="txt">售水设备</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="section fp-table" id="section-6">
+        <div class="index-box6">
+          <div class="tit wow fadeInUp">
+            <div class="en"><span>cooperative</span></div>
+            <div class="t1">合作伙伴</div>
+          </div>
+          <!-- <div class="img wow fadeInUp" data-wow-delay=".5s">
+            <img src="fer/images/index/11.png" alt="" />
+          </div> -->
+
+          <div class="swiper1 wow fadeInUp" data-wow-delay=".5s">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="hzList">
+                      <ul>
+                        <!-- <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/13.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/14.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/15.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/16.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li> -->
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/17.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/23.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/19.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/20.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/10.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/09.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/18.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/24.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/25.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/26.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/04.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/02.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/03.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/01.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/21.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/28.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="hzList">
+                      <ul>
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(/resources/assets/images/logo/30.jpg);
+                              "
+                            >
+                              <img
+                                src="/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(/resources/assets/images/logo/22.jpg);
+                              "
+                            >
+                              <img
+                                src="/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(/resources/assets/images/logo/27.jpg);
+                              "
+                            >
+                              <img
+                                src="/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(/resources/assets/images/logo/11.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/12.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/13.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/14.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/15.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/16.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/17.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/23.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/19.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/20.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/10.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/09.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/18.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/24.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/25.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/26.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/04.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/02.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/03.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/01.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/21.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="thum">
+                            <div
+                              class="pic"
+                              style="
+                                background-image: url(https://www.shuwon.com/resources/assets/images/logo/28.jpg);
+                              "
+                            >
+                              <img
+                                src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                              />
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- <div class="hzList wow fadeInUp" data-wow-delay=".5s">
+            <ul>
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/29.jpg);
+                    "
+                  >
+                    <img src="/resources/assets/images/t245-130.png" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/06.jpg);
+                    "
+                  >
+                    <img src="/resources/assets/images/t245-130.png" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/07.jpg);
+                    "
+                  >
+                    <img src="/resources/assets/images/t245-130.png" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/30.jpg);
+                    "
+                  >
+                    <img src="/resources/assets/images/t245-130.png" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/22.jpg);
+                    "
+                  >
+                    <img src="/resources/assets/images/t245-130.png" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/27.jpg);
+                    "
+                  >
+                    <img src="/resources/assets/images/t245-130.png" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(/resources/assets/images/logo/11.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/12.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/13.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/14.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/15.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/16.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/17.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/23.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/19.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/20.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/10.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/09.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/18.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/24.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/25.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/26.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/04.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/02.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/03.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/01.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/21.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="thum">
+                  <div
+                    class="pic"
+                    style="
+                      background-image: url(https://www.shuwon.com/resources/assets/images/logo/28.jpg);
+                    "
+                  >
+                    <img
+                      src="https://www.shuwon.com/resources/assets/images/t245-130.png"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      <div class="section fp-table" id="section-foot">
+        <footer>
+          <div class="container">
+            <div class="foot1">
+              <div class="left">
+                <div class="t1">客服热线：</div>
+                <div class="desc">
+                  <p>周一至周五 9:00-18:00</p>
+                </div>
+                <div class="tel">
+                  <p>400-005-4000</p>
+                </div>
+                <div class="desc">
+                  <ul>
+                    <li>
+                      <label for="">总部：</label>
+                      <p>内蒙古自治区包头市昆都仑区广基花园融通水务</p>
+                    </li>
+                    <li>
+                      <label for="">邮箱：</label>
+                      <p>rtsw@rtsw.com.cn</p>
+                    </li>
+                    <li>
+                      <label for="">邮编：</label>
+                      <p>014000</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="icons-list">
+                  <div class="bshare-custom">
+                    <a title="分享到新浪微博" class="bshare-sinaminiblog"></a
+                    ><a title="分享到微信" class="bshare-weixin"></a
+                    ><a title="分享到LinkedIn" class="bshare-linkedin"></a
+                    ><a
+                      title="更多平台"
+                      class="bshare-more bshare-more-icon more-style-addthis"
+                    ></a>
+                  </div>
+                  <script
+                    type="text/javascript"
+                    charset="utf-8"
+                    src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"
+                  ></script>
+                  <script
+                    type="text/javascript"
+                    charset="utf-8"
+                    src="http://static.bshare.cn/b/bshareC0.js"
+                  ></script>
+                  <!-- <a href="#" class="icons-wb"> </a>
+                  <a href="#" class="icons-wx"> </a> -->
+                  <a href="#" class="icons-tt"> </a>
+                  <a href="#" class="icons-zhi"> </a>
+                  <!-- <a href="#" class="icons-in"> </a> -->
+                </div>
+              </div>
+              <div class="right">
+                <ul>
+                  <li class="first">
+                    <a href="#">关于融通</a>
+                  </li>
+                  <li><a href="#">企业简介</a></li>
+                  <li><a href="#">发展历程</a></li>
+                  <li><a href="#">企业文化</a></li>
+                  <li><a href="#">荣誉资质</a></li>
+                  <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul>
+                  <li class="first">
+                    <a href="#">业务领域</a>
+                  </li>
+                  <li><a href="#">直饮水解决方案</a></li>
+                  <li><a href="#">施工改造</a></li>
+                  <li><a href="#">技术提供</a></li>
+                  <li><a href="#">售水设备</a></li>
+                </ul>
+                <ul>
+                  <li class="first">
+                    <a href="#">新闻公告</a>
+                  </li>
+                  <li><a href="#">公司动态</a></li>
+                  <li><a href="#">通知公告</a></li>
+                  <li><a href="#">停水公告</a></li>
+                  <li><a href="#">水质报告</a></li>
+                </ul>
+                <ul>
+                  <li class="first">
+                    <a href="#">综合服务</a>
+                  </li>
+                  <li><a href="#">客服中心</a></li>
+                  <li><a href="#">政策法规</a></li>
+                  <li><a href="#">办事指南</a></li>
+                  <li><a href="#">用水常识</a></li>
+                  <li><a href="#">常见问题</a></li>
+                  <li><a href="#">咨询投诉</a></li>
+                </ul>
+                <ul>
+                  <li class="first">
+                    <a href="#">加入融通</a>
+                  </li>
+                  <li><a href="#">人才理念</a></li>
+                  <li><a href="#">人才招聘</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="foot2">
+              <div class="copy">
+                <p>
+                  Copyright © 2023 内蒙古融通水务有限责任公司 ICP备19007715号
+                </p>
+              </div>
+              <div class="link">
+                <a href="">隐私声明</a>
+                <a href="">联系我们</a>
+                <a href="">法律政策</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!--2023-04-25 新加-->
+    <div class="page-tool">
+      <ul>
+        <li>
+          <a href="#" class="icons-message"></a>
+        </li>
+        <li>
+          <a href="#" class="icons-like"></a>
+        </li>
+        <li>
+          <a href="#" id="gotop" class="icons-top"></a>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="fer/fan/inpage.js"></script>
+    <script src="fer/lib/fullpage/fullpage.js"></script>
+    <link rel="stylesheet" href="fer/lib/fullpage/fullpage.css" />
+
+    <script type="text/javascript" src="fer/lib/wow.min.js"></script>
+    <script type="text/javascript">
+      var _page = '';
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true,
+        callback: function (box) {
+          if ($(box).hasClass('index-box4-swiper')) {
+            console.log(box);
+            if ($(box).attr('data-m') != '') {
+              $(box)
+                .find('.num')
+                .each(function () {
+                  var _thas = $(this);
+                  setTimeout(function () {
+                    countup2(_thas.find('.no'));
+                  }, $(box).attr('data-m'));
+                });
+            }
+          }
+        },
+        scrollContainer: null,
+      });
+      wow.init();
+
+      //2023-04-25
+      $('#gotop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+      });
+      function fullpagefun() {
+        if ($(window).width() > 768) {
+          new fullpage('#fullpage', {
+            css3: true,
+            scrollingSpeed: 1000,
+            //navigation: true,
+            scrollBar: true,
+            slidesNavigation: true,
+            responsiveHeight: 330,
+            //autoScrolling: false,
+            recordHistory: false,
+            responsiveHeight: 600,
+            dragAndMove: true,
+            dragAndMoveKey:
+              'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+            controlArrows: false,
+            onLeave: function (origin, destination, direction, trigger) {
+              var origin = this;
+              //离开第二个section后
+              // alert(origin.index);
+
+              if (destination.index == 0) {
+                setTimeout(() => {
+                  $('header').removeClass('down');
+                  $('header').removeClass('up');
+                }, 300);
+              }
+
+              //2023-04-27
+              if (destination.index == 3) {
+                //企业成就 动画控制
+                $('.index-box4-swiper .num').each(function () {
+                  countup2($(this).find('.no'));
+                });
+              }
+            },
+          });
+        }
+      }
+      fullpagefun();
+      $(window).resize(function () {
+        fullpagefun();
+      });
+    </script>
+    <script
+      type="text/javascript"
+      data-main="fer/main"
+      src="fer/require.js"
+      defer
+      async="true"
+    ></script>
+  </body>
+</html>
