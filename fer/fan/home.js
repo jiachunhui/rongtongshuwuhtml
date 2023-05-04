@@ -242,7 +242,7 @@
   try {
     //index-box2
     mySwiper2 = new Swiper('.index-box2-swiper .swiper', {
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
       navigation: {
@@ -250,15 +250,9 @@
         prevEl: '.index-box2-swiper .swiper-button-prev',
       },
       breakpoints: {
-        640: {
-          spaceBetween: 20,
-        },
-        768: {
-          spaceBetween: 40,
-        },
-        1024: {
-          spaceBetween: 60,
-        },
+        640: { slidesPerView: 1, spaceBetween: 20 },
+        768: { slidesPerView: 3, spaceBetween: 40 },
+        1024: { slidesPerView: 3, spaceBetween: 40 },
       },
     });
   } catch (e) {}
