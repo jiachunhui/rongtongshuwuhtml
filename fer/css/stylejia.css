@@ -281,7 +281,7 @@ button {
   background: none;
 }
 .header-hover {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .header-hover .container {
   height: 1rem;
@@ -299,7 +299,7 @@ header {
   z-index: 3333;
 }
 header.up {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 header.up .container {
   height: 1rem;
@@ -310,7 +310,7 @@ header.up .container {
   }
 }
 header.down {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 header.down .container {
   height: 1rem;
@@ -916,6 +916,13 @@ footer .foot1 .left .desc {
 }
 footer .foot1 .left .desc p {
   line-height: 1;
+}
+footer .foot1 .left .desc ul li {
+  display: flex;
+  padding-bottom: 0.1rem;
+}
+footer .foot1 .left .desc ul li label {
+  flex: 0 0 auto;
 }
 footer .foot1 .left .tel {
   font-size: 0.36rem;
@@ -1785,12 +1792,13 @@ footer .foot2 .link a + a {
     padding: 0.2rem;
   }
 }
-.index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list2 ul li + li {
-  padding-top: 0.46rem;
+.index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list2 ul li {
+  font-size: 0.18rem;
+  height: 4.5em;
 }
 @media (max-width: 768px) {
-  .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list2 ul li + li {
-    padding-top: 0.1rem;
+  .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list2 ul li {
+    font-size: 0.12rem;
   }
 }
 .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list2 ul li a {
@@ -1839,14 +1847,12 @@ footer .foot2 .link a + a {
 }
 .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li {
   display: flex;
-  align-items: center;
-}
-.index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li + li {
-  padding-top: 0.46rem;
+  font-size: 0.18rem;
+  height: 4.5em;
 }
 @media (max-width: 768px) {
-  .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li + li {
-    padding-top: 0.15rem;
+  .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li {
+    font-size: 0.12rem;
   }
 }
 .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li label {
@@ -1893,12 +1899,12 @@ footer .foot2 .link a + a {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   color: #222;
-  font-size: 0.2rem;
+  font-size: 0.18rem;
   line-height: 1;
 }
 @media (max-width: 768px) {
   .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li a .t1 {
-    font-size: 0.14rem;
+    font-size: 0.12rem;
   }
 }
 .index-box2 .container .index-box2-right2 .index-box2-right2-tabcontent .index-box2-right2-tabcontent-item .item .list ul li a .desc {
@@ -2926,7 +2932,7 @@ footer .foot2 .link a + a {
 .index-box5 .list::after {
   height: 0.84rem;
   background: url(../images/index/line2.png) no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
   content: '';
   position: absolute;
   top: 0.656rem;
@@ -2985,6 +2991,8 @@ footer .foot2 .link a + a {
   height: 1rem;
   border: none;
   pointer-events: all;
+  background: linear-gradient(0deg, rgba(0, 157, 59, 0.4), rgba(1, 194, 73, 0.4));
+  box-shadow: 0px 10px 30px 0px rgba(0, 157, 59, 0.2);
 }
 @media (max-width: 768px) {
   .index-box5 .list .item.active .dian {
@@ -2995,11 +3003,14 @@ footer .foot2 .link a + a {
 .index-box5 .list .item.active .dian::before {
   position: absolute;
   content: '';
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   border: 0.04rem solid #fff;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+  background: linear-gradient(0deg, #009D3B, #01C249);
+  box-shadow: 0px 10px 30px 0px rgba(0, 157, 59, 0.2);
+  border: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3009,7 +3020,10 @@ footer .foot2 .link a + a {
   .index-box5 .list .item.active .dian::before {
     width: 100%;
     height: 100%;
+    width: 70%;
+    height: 70%;
     border: 0.02rem solid #fff;
+    border: none;
   }
 }
 .index-box5 .list .item .dian {
@@ -4101,6 +4115,33 @@ footer .foot2 .link a + a {
   border-radius: 5px;
   box-shadow: 0 20px 50px rgba(22, 89, 136, 0.3);
 }
+.business-box1 .swiper1 .swiper1-txt {
+  position: absolute;
+  z-index: 33;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.8rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.18rem;
+}
+@media (max-width: 768px) {
+  .business-box1 .swiper1 .swiper1-txt {
+    left: 0.2rem;
+    right: 0.2rem;
+    bottom: 0.3rem;
+    font-size: 0.12rem;
+  }
+}
+.business-box1 .swiper1 .swiper1-txt p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 4;
+}
 .business-box1 .swiper1 .swiper {
   height: 8rem;
   border-radius: 5px;
@@ -4176,6 +4217,7 @@ footer .foot2 .link a + a {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0.18rem;
+  display: none;
 }
 @media (max-width: 768px) {
   .business-box1 .swiper1 .swiper .item .txt {
@@ -8157,6 +8199,7 @@ footer .foot2 .link a + a {
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 .about-box1-3 .list::before {
   position: absolute;
@@ -8168,6 +8211,8 @@ footer .foot2 .link a + a {
   background: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(28px);
   backdrop-filter: blur(28px);
+  background: url(../images/icon/bg3.png) no-repeat top center;
+  background-size: cover;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);

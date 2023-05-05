@@ -344,6 +344,14 @@
       $(this).addClass('active');
       return false;
     });
+    //2023-05-05
+    $('#index-box5-list .item').hover(function () {
+      var index = $(this).index();
+      swiper2.slideTo(index, 300, true);
+      $('#index-box5-list .item').removeClass('active');
+      $(this).addClass('active');
+      return false;
+    });
   } catch (e) {}
 
   repage_com();
