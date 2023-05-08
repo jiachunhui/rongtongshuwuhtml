@@ -537,7 +537,7 @@
         },
       },
       pagination: {
-        el: '.business-box1 .swiper1 .swiper-pagination',
+        // el: '.business-box1 .swiper1 .swiper-pagination',
       },
     });
   } catch (e) {}

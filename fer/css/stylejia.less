@@ -1884,6 +1884,7 @@ footer {
           top: .90rem;
           right: .90rem;
           font-size: .16rem;
+          top: 6.90rem;
 
           @media @max768 {
             right: 0;
@@ -2211,6 +2212,7 @@ footer {
       width: calc(100vw / 2 + 2.40rem);
       top: 1.40rem;
       left: -1.5rem;
+      top: 1.00rem;
 
       @media @max768 {
         position: static;
@@ -2333,6 +2335,7 @@ footer {
           overflow: hidden;
           border-radius: 5px;
           height: 2.63rem;
+          height: 2.20rem;
 
           @media @max768 {
             height: 1.8rem;
@@ -2347,6 +2350,8 @@ footer {
         .txt {
           padding-top: .40rem;
           padding-left: .30rem;
+          padding-top: .30rem;
+          padding-left: .20rem;
 
           @media @max768 {
             padding-top: .2rem;
@@ -2356,6 +2361,7 @@ footer {
           .t1 {
             position: relative;
             font-size: .20rem;
+            font-size: .18rem;
 
             @media @max768 {
               font-size: .14rem;
@@ -2366,6 +2372,7 @@ footer {
             .tt {
               position: relative;
               font-size: .20rem;
+              font-size: .18rem;
 
               @media @max768 {
                 font-size: .14rem;
@@ -2381,6 +2388,7 @@ footer {
                 top: .25em;
                 bottom: .25em;
                 border-radius: 3px;
+                left: -.20rem;
                 .transition;
 
                 @media @max768 {
@@ -2397,6 +2405,7 @@ footer {
                 color: #31383E;
                 line-height: 1.5;
                 height: 3em;
+                font-size: .18rem;
 
                 @media @max768 {
                   font-size: .14rem;
@@ -2411,6 +2420,7 @@ footer {
               font-size: .20rem;
               //font-family: 'AlibabaPuHuiTi_2_55_Regular';
               line-height: 1;
+              font-size: .16rem;
 
               @media @max768 {
                 font-size: .12rem;
@@ -2426,6 +2436,7 @@ footer {
 
             font-size: .18rem;
             color: #111111;
+            font-size: .16rem;
 
             @media @max768 {
               font-size: .12rem;
@@ -2434,7 +2445,7 @@ footer {
 
 
             p {
-              .text-overflow(4);
+              .text-overflow(3);
             }
           }
         }
@@ -3421,6 +3432,7 @@ footer {
         border-radius: 50%;
         position: relative;
         margin: 0 auto;
+        z-index: 999;
 
         @media @max768 {
           width: .3rem;
@@ -4151,6 +4163,10 @@ footer {
       padding-bottom: .6rem;
     }
 
+    .swiper-wrapper {
+      cursor: default !important;
+    }
+
     .swiper-nextprev;
 
     .swiper-button-next,
@@ -4557,6 +4573,7 @@ footer {
           z-index: 3;
           opacity: 1;
           background-color: fade(#fff, 100%);
+          margin: 0 .041rem;
 
           &.swiper-pagination-bullet-active {
             background-color: fade(#0098E7, 100%);
@@ -5231,6 +5248,15 @@ footer {
         bottom: 0;
         width: 100%;
 
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #fff;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+          background-color: #007aff;
+        }
       }
     }
 
@@ -5908,6 +5934,17 @@ footer {
       @media @max768 {
         font-size: .14rem;
       }
+
+      a {
+        color: inherit;
+
+        cursor: default;
+
+
+        &:hover {
+          color: inherit;
+        }
+      }
     }
 
     .t2 {
@@ -6027,6 +6064,19 @@ footer {
 
       @media @max768 {
         font-size: .18rem;
+      }
+
+      a {
+        color: inherit;
+
+        cursor: default;
+
+
+
+
+        &:hover {
+          color: inherit;
+        }
       }
     }
 
@@ -6367,9 +6417,10 @@ footer {
             }
 
             li {
-              flex: 1 1 auto;
+              flex: 0 0 auto;
               display: flex;
               align-items: flex-start;
+              width: 22%;
 
               @media @max768 {
                 &+li {
@@ -6378,6 +6429,9 @@ footer {
               }
 
               &.address {
+                flex: 1 1 auto;
+                padding-right: .2rem;
+
                 p {
                   &::before {
                     content: '地址';
@@ -6516,6 +6570,13 @@ footer {
           &.active {
             &::after {
               display: none;
+            }
+          }
+
+          &.active {
+            &::after {
+              display: none;
+
             }
           }
 
@@ -7229,6 +7290,11 @@ footer {
       padding: .5rem .2rem;
     }
 
+
+    .date {
+      display: none;
+    }
+
     .t1 {
       flex: 0 0 auto;
       display: flex;
@@ -7255,6 +7321,23 @@ footer {
         @media @max768 {
           width: .20rem;
           height: .20rem;
+        }
+      }
+
+      a {
+        color: inherit;
+        padding-left: .18rem;
+        cursor: default;
+        flex: 1 1 auto;
+        line-height: 1.4;
+
+
+        @media @max768 {
+          padding-left: .13rem;
+        }
+
+        &:hover {
+          color: inherit;
         }
       }
 
@@ -8324,7 +8407,7 @@ footer {
     .item {
       padding-left: .3rem;
       position: relative;
-      cursor: pointer;
+
 
       &::before {
         position: absolute;
@@ -8497,6 +8580,11 @@ footer {
 
           a {
             cursor: default;
+            color: inherit;
+
+            &:hover {
+              color: inherit;
+            }
           }
 
           p {
@@ -8537,6 +8625,7 @@ footer {
   padding-bottom: 0;
   height: 100vh;
 
+
   @media @max768 {
     padding-bottom: .6rem;
     padding-top: .5rem;
@@ -8544,9 +8633,7 @@ footer {
 
   &:hover {
     .img-bg {
-      img {
-        transform: scale(1.041);
-      }
+      img {}
     }
   }
 
@@ -8584,12 +8671,19 @@ footer {
   .swiper1 {
     padding-top: 3.2rem;
     position: relative;
-    display: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+    bottom: 1rem;
+
+
 
     @media @max768 {
       display: block;
       padding-top: calc(3.2rem / 2);
       padding-bottom: .5rem;
+      position: relative;
+      bottom: auto;
     }
 
     .swiper {
@@ -8632,9 +8726,7 @@ footer {
     .item {
       .transition;
 
-      &:hover {
-        transform: translateY(-.2rem);
-      }
+      &:hover {}
 
       .t1 {
         width: 1.2rem;
@@ -8650,6 +8742,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        padding: 0 .5em;
 
         @media @max768 {
           width: calc(1.2rem / 2);
@@ -8700,6 +8793,7 @@ footer {
     min-height: 3.36rem;
 
     padding-bottom: 1.2rem;
+    display: none;
 
     &::after {
       position: absolute;
@@ -8891,10 +8985,13 @@ footer {
     color: #666666;
     font-size: .16rem;
     padding: .8rem 0;
+    max-width: 9.0rem;
+    margin: 0 auto;
 
     @media @max768 {
       padding: .3rem 0;
       font-size: .12rem;
+      max-width: 100%;
     }
 
     img {
@@ -9491,12 +9588,13 @@ footer {
       .icons-top {
         background: #FFFFFF;
         box-shadow: 0px 10px 30px 0px rgba(173, 173, 173, 0.9);
-
+        background: linear-gradient(0deg, #009D3B, #01C249);
+        box-shadow: 0px 10px 30px 0px rgba(0, 157, 59, 0.2);
 
         &:before {
-          background: url(../images/icon/jt-up.png) no-repeat center center;
+          background: url(../images/icon/jt-6-up.png) no-repeat center center;
           background-size: contain;
-          width: .25rem;
+          width: .15rem;
           height: .14rem;
 
           @media @max768 {
@@ -9623,8 +9721,8 @@ body {
   -webkit-perspective: 1000;
   position: absolute;
   bottom: .8rem;
-  left: 22%;
-  right: 22%;
+  left: 10%;
+  right: 10%;
 
   @media @max768 {
 
@@ -9654,7 +9752,7 @@ body {
   transform: perspective(1000px) rotateX(52deg);
   transform-style: preserve-3d;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-gap: .15rem;
 
   @media @max768 {
@@ -9779,4 +9877,14 @@ body {
       }
     }
   }
+}
+
+*,
+button,
+a {
+  outline: none;
+}
+
+.BMap_stdMpCtrl {
+  inset: auto 10px 10px auto !important;
 }
