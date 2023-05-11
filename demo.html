@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    //http://t20.dbeltroad.org/uploadfile/2023/0510/20230510030115849.pdf
+    //关于融通/关于融通.html
+    <iframe
+      src="http://t20.dbeltroad.org/uploadfile/2023/0510/20230510030115849.pdf"
+      id="bi_iframe"
+      scrolling="no"
+      frameborder="0"
+      width="100%"
+      onload="adjustIframe();"
+      frameborder="0"
+    ></iframe>
+    <!--set iframe height  -->
+    <script type="text/javascript">
+      var iframe = document.getElementById('bi_iframe');
+      let height = 0;
+      function adjustIframe() {
+        var ifm = document.getElementById('bi_iframe');
+        console.dir(ifm);
+
+        ifm.onload = function () {
+          ifm.style.height = ifm.contentDocument.body.clientHeight + 'px';
+          let height = ifm.contentDocument.body.scrollHeight;
+          console.log(height); // PDF加载完后再获取
+        };
+      }
+      let timer = setInterval(() => {
+        let newHeight = iframe.contentDocument.body.scrollHeight;
+        if (newHeight > height) {
+          height = newHeight;
+        } else {
+          clearInterval(timer); // 高度不再变化,获取完成
+          console.log(height);
+        }
+      }, 100);
+    </script>
+  </body>
+</html>
