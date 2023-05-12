@@ -5504,6 +5504,7 @@ footer .foot2 .link a + a {
   border-radius: 5px;
   padding: 0.5rem 0.6rem;
   transition: all ease-in-out 0.3s;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .news-box3 .list .item {
@@ -5604,6 +5605,9 @@ footer .foot2 .link a + a {
 .news-box3 .list .item .desc p {
   color: #888;
   display: inline;
+}
+.news-box3 .list .item .desc ul {
+  width: 100% !important;
 }
 .news-box3 .list .item .desc .desc-box {
   overflow: hidden;
