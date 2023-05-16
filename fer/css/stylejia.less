@@ -656,6 +656,17 @@ header {
                   }
                 }
 
+                &.active {
+                  span {
+                    &.navs-open-btn {
+                      &::after {
+                        display: none;
+
+                      }
+                    }
+                  }
+                }
+
                 span {
                   &.navs-open-btn {
                     position: absolute;
@@ -664,6 +675,8 @@ header {
                     cursor: pointer;
                     top: 0;
                     right: .05rem;
+
+
 
                     &.active {
                       &::after {
@@ -2241,6 +2254,10 @@ footer {
                     font-size: .12rem;
                   }
 
+                  &:nth-child(n+6) {
+                    display: none;
+                  }
+
                   label {
                     width: .60rem;
                     height: .30rem;
@@ -2589,7 +2606,7 @@ footer {
     left: 0;
     bottom: 0;
     overflow: hidden;
-    right: calc(100vw / 2 + 1.30rem);
+    right: calc(100% / 2 + 1.30rem);
 
     @media @max768 {
       right: 0;
@@ -2928,7 +2945,10 @@ footer {
     .more {
       position: absolute;
       bottom: 0;
-      right: calc(50% + 1.33rem - 2.50rem);
+      right: calc(100vw / 2 - 2.50rem + .55rem);
+      right: auto;
+      width: 2.5rem;
+      left: calc(50% - 1.3rem);
 
       @media @max768 {
 
@@ -3427,7 +3447,7 @@ footer {
       top: 0.656rem;
       left: 0;
       right: 0;
-      width: 100vw;
+      width: 105vw;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -4059,6 +4079,7 @@ footer {
               @media @max768 {
                 width: 33.33%;
                 height: 50%;
+                text-align: center;
               }
 
               &+li {
@@ -4413,11 +4434,14 @@ footer {
     @media @max768 {
       grid-template-columns: 1fr;
       grid-gap: .2rem;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .item {
       width: 4.80rem;
       height: 4.80rem;
+      height: auto;
       background: #FFFFFF;
       box-shadow: 0px 0px 53px 7px rgba(0, 0, 0, 0.05);
       border-radius: 5px;
@@ -4486,6 +4510,7 @@ footer {
         font-weight: 400;
         color: #000000;
         flex: 0 0 auto;
+        flex: 1 1 auto;
 
         @media @max768 {
           padding: .15rem 0;
@@ -4495,9 +4520,11 @@ footer {
           line-height: 1.2;
           font-size: .28rem;
           .text-overflow(2);
+          height: 2.5em;
 
           @media @max768 {
             font-size: .16rem;
+            height: auto;
           }
         }
 
@@ -4516,6 +4543,12 @@ footer {
         flex: 1 1 auto;
         overflow: hidden;
         text-align: center;
+        flex: 0 0 auto;
+        height: 2.9rem;
+
+        @media @max768 {
+          flex: 0 0 auto;
+        }
 
         img {
           height: 100%;
@@ -4911,7 +4944,7 @@ footer {
       border: 1px solid #0098E7;
       width: calc(4.22rem / 2);
       height: calc(4.22rem / 2);
-
+      display: none;
     }
   }
 
@@ -5212,6 +5245,7 @@ footer {
 
       @media @max768 {
         padding: 0;
+        margin: 0 .05rem;
       }
 
       &.active {
@@ -5289,6 +5323,7 @@ footer {
     @media @max768 {
       padding: .2rem;
       height: calc(6.10rem / 2);
+      height: auto;
     }
 
     &::before {
@@ -5385,8 +5420,18 @@ footer {
         background-color: #fff;
         opacity: 1;
 
+        @media @max768 {
+          background-color: #999;
+          opacity: .5;
+        }
+
         &.swiper-pagination-bullet-active {
           background-color: #007aff;
+
+          @media @max768 {
+
+            opacity: 1;
+          }
         }
       }
     }
@@ -5421,6 +5466,7 @@ footer {
           @media @max768 {
             padding-right: 0;
             padding-bottom: .2rem;
+            flex: 0 0 auto;
           }
 
           .t1 {
@@ -5516,6 +5562,9 @@ footer {
     }
 
     .item {
+      display: flex;
+      flex-direction: column;
+
       &:hover {
         .txt {
           box-shadow: 0px 0px 26px 0px rgba(38, 63, 101, 0.5);
@@ -5529,15 +5578,16 @@ footer {
       }
 
       .txt {
-        height: 2.20rem;
+        // height: 2.20rem;
         background-color: #fff;
-        padding: .4rem .4rem 0 .4rem;
+        padding: .4rem .4rem .4rem .4rem;
         box-shadow: 0px 0px 16px 0px rgba(38, 63, 101, 0.1);
         .transition;
+        flex: 1 1 auto;
 
         @media @max768 {
           padding: .2rem;
-          height: 1.50rem;
+          // height: 1.50rem;
         }
 
         .t1 {
@@ -5580,6 +5630,7 @@ footer {
         width: 100%;
         height: 3.28rem;
         position: relative;
+        flex: 0 0 auto;
 
         @media @max768 {
           height: calc(3.28rem / 2);
@@ -5846,7 +5897,7 @@ footer {
       border-radius: 5px;
       padding: .5rem .6rem;
       .transition;
-
+      height: auto;
       overflow: hidden;
 
       @media @max768 {
@@ -5940,6 +5991,7 @@ footer {
         font-size: .2rem;
         flex: 1 1 auto;
 
+
         @media @max768 {
           font-size: .12rem;
         }
@@ -5964,6 +6016,7 @@ footer {
 
       .more {
         flex: 0 0 auto;
+        padding-top: .2rem;
 
         @media @max768 {
           padding-top: .2rem;
@@ -6038,7 +6091,7 @@ footer {
   border-radius: .2rem !important;
   max-width: 10rem;
   min-width: 10rem;
-  height: 5rem;
+  height: 5.5rem;
 
   @media @max768 {
     min-width: 96%;
@@ -6055,7 +6108,7 @@ footer {
   }
 
   .layui-layer-content {
-    padding: .6rem .8rem .6rem .8rem;
+    padding: .6rem .8rem 0 .8rem;
     height: 100%;
 
     @media @max768 {
@@ -6136,6 +6189,10 @@ footer {
         display: inline;
       }
 
+      ul {
+        width: 100% !important;
+      }
+
       .desc-box {}
     }
 
@@ -6167,7 +6224,7 @@ footer {
   border-radius: .2rem !important;
   max-width: 10rem;
   min-width: 10rem;
-  height: 5rem;
+  height: 5.5rem;
 
   @media @max768 {
     min-width: 96%;
@@ -6184,7 +6241,7 @@ footer {
   }
 
   .layui-layer-content {
-    padding: .6rem .8rem .6rem .8rem;
+    padding: .6rem .8rem 0 .8rem;
     height: 100%;
 
     @media @max768 {
@@ -6260,6 +6317,7 @@ footer {
 
       ul {
         padding-bottom: .2rem;
+        width: 100% !important;
 
         li {
           display: flex;
@@ -6391,6 +6449,7 @@ footer {
             padding: .15rem 0;
             overflow: hidden;
             width: 100%;
+            padding-right: .22rem;
           }
 
           a {
@@ -6521,7 +6580,7 @@ footer {
 
         .tips {
           width: 14rem;
-          height: 2.95rem;
+
           background: #FFFFFF;
           box-shadow: 0px 0px 53px 7px rgba(0, 0, 0, 0.08);
           border-radius: 5px;
@@ -6531,6 +6590,7 @@ footer {
           z-index: 33;
           top: 0;
           padding: 0 .6rem;
+          padding: 0 .3rem;
 
           @media @max768 {
             width: 95%;
@@ -6546,6 +6606,7 @@ footer {
             color: #222222;
             font-size: .32rem;
             text-align: center;
+            padding-top: .3rem;
 
             @media @max768 {
               padding-top: .2rem;
@@ -6557,6 +6618,8 @@ footer {
           ul {
             display: flex;
             padding: .4rem;
+            padding-bottom: .3rem;
+            padding-top: .3rem;
 
             @media @max768 {
               padding: 0;
@@ -7438,7 +7501,7 @@ footer {
   border-radius: .2rem !important;
   max-width: 10rem;
   min-width: 10rem;
-  height: 5rem;
+  height: 5.5rem;
 
 
 
@@ -7457,7 +7520,7 @@ footer {
   }
 
   .layui-layer-content {
-    padding: .6rem .8rem .6rem .8rem;
+    padding: .6rem .8rem 0 .8rem;
     height: 100%;
 
     @media @max768 {
@@ -7556,6 +7619,10 @@ footer {
           width: .20rem;
           height: .20rem;
         }
+      }
+
+      ul {
+        width: 100% !important;
       }
 
       .desc-more {
@@ -7708,6 +7775,7 @@ footer {
         #area-picker {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: 40% 30% 30%;
 
           .province {
             .layui-input {
@@ -8353,8 +8421,10 @@ footer {
           position: relative;
           display: flex;
           align-items: center;
-          margin: .4rem 0;
+          margin: .2rem 0;
           opacity: 0;
+          display: none;
+          .transition;
 
           @media @max768 {
             font-size: .12rem;
@@ -8362,6 +8432,7 @@ footer {
 
           &.active {
             opacity: 1;
+            display: block;
           }
 
           &::after {
@@ -8436,12 +8507,28 @@ footer {
 .about-box1 {
   background: url(../images/about/10.png) no-repeat right bottom;
   background-size: cover;
+  position: relative;
   padding-bottom: 1.6rem;
 
   @media @max768 {
     padding-bottom: .8rem;
     background: url(../images/about/10.png) no-repeat center center;
     background-size: cover;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: fade(#fff, 50%);
+    opacity: 0;
+
+    @media @max768 {
+      opacity: 1;
+    }
   }
 
   .page-tit {
@@ -8454,6 +8541,9 @@ footer {
   }
 
   .container {
+    position: relative;
+    z-index: 3;
+
     .desc {
       width: 50%;
       font-weight: 400;
@@ -9138,6 +9228,8 @@ footer {
         line-height: 1;
         color: #666666;
         font-size: .16rem;
+        flex-wrap: wrap;
+        line-height: 1.5;
 
         @media @max768 {
           font-size: .12rem;
@@ -9346,17 +9438,29 @@ footer {
 
       li {
         flex: 1 1 auto;
+        width: 50%;
+        flex: 0 0 auto;
+        overflow: hidden;
+
+        @media @max768 {
+          width: 100%;
+        }
 
         &:nth-child(2) {
           text-align: right;
+          padding-left: .3rem;
 
           @media @max768 {
             text-align: left;
             padding-top: .2rem;
+            padding-left: 0;
           }
         }
 
         a {
+          .text-overflow;
+          display: block;
+
           &:hover {
             color: #0087D4;
           }
